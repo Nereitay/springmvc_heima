@@ -1,0 +1,39 @@
+<!doctype html>
+<%@page contentType="text/html; charset=UTF-8" language="java" %>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+</head>
+<body>
+
+    <h3>传统文件上传</h3>
+
+    <form action="user/fileUpload1" method="post" enctype="multipart/form-data">
+        选择文件：<input type="file" name="upload"/><br/>
+        <input type="submit" value="上传"/>
+    </form>
+
+    <hr/>
+
+    <h3>SpringMVC文件上传</h3>
+    <form action="user/fileUpload2" method="post" enctype="multipart/form-data">
+        选择文件：<input type="file" name="upload"/><br/>
+        <input type="submit" value="上传"/>
+    </form>
+
+    <hr/>
+
+    <h3>跨服务器文件上传</h3>
+    <form action="user/fileUpload3" method="post" enctype="multipart/form-data">
+        选择文件：<input type="file" name="upload"/><br/>
+        <input type="submit" value="上传"/>
+    </form>
+
+</body>
+</html>
+
+    
